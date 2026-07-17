@@ -1,0 +1,29 @@
+{
+  "name": "covercraft",
+  "version": "0.1.0",
+  "description": "AI-powered academic cover page builder for Indian students",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "turbo run dev --parallel",
+    "build": "turbo run build",
+    "test": "turbo run test",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,json,md}\"",
+    "format:check": "prettier --check \"**/*.{ts,tsx,json,md}\"",
+    "clean": "turbo run clean && rm -rf node_modules .pnpm-store",
+    "db:seed": "node scripts/seed-database.js",
+    "db:migrate": "node scripts/migrate-database.js"
+  },
+  "devDependencies": {
+    "@turbo/gen": "^1.10.0",
+    "prettier": "^3.0.0",
+    "turbo": "^1.10.0",
+    "typescript": "^5.3.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "packageManager": "pnpm@8.13.1"
+}
