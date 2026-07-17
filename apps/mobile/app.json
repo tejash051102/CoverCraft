@@ -1,0 +1,58 @@
+{
+  "name": "CoverCraft",
+  "slug": "covercraft",
+  "version": "0.1.0",
+  "orientation": "portrait",
+  "icon": "./assets/icon.png",
+  "userInterfaceStyle": "automatic",
+  "splash": {
+    "image": "./assets/splash.png",
+    "resizeMode": "contain",
+    "backgroundColor": "#ffffff"
+  },
+  "assetBundlePatterns": [
+    "**/*"
+  ],
+  "ios": {
+    "supportsTabletMode": true,
+    "bundleIdentifier": "com.covercraft.app",
+    "config": {
+      "usesNonExemptEncryption": false
+    }
+  },
+  "android": {
+    "adaptiveIcon": {
+      "foregroundImage": "./assets/adaptive-icon.png",
+      "backgroundColor": "#ffffff"
+    },
+    "package": "com.covercraft.app",
+    "permissions": [
+      "android.permission.CAMERA",
+      "android.permission.READ_EXTERNAL_STORAGE",
+      "android.permission.WRITE_EXTERNAL_STORAGE",
+      "android.permission.INTERNET"
+    ]
+  },
+  "web": {
+    "favicon": "./assets/favicon.png"
+  },
+  "plugins": [
+    "expo-router",
+    [
+      "expo-image-picker",
+      {
+        "photosPermission": "Allow CoverCraft to access your photos to upload images for your cover pages.",
+        "cameraPermission": "Allow CoverCraft to access your camera to capture images."
+      }
+    ]
+  ],
+  "extra": {
+    "router": {
+      "origin": false
+    },
+    "eas": {
+      "projectId": "your-eas-project-id"
+    }
+  },
+  "owner": "tejash051102"
+}
